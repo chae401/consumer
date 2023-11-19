@@ -22,6 +22,7 @@ import org.springframework.kafka.support.serializer.JsonDeserializer;
 public class ConsumerConfiguration {
     private final KafkaProperties kafkaProperties;
 
+    @Bean
     KafkaListenerContainerFactory<ConcurrentMessageListenerContainer<String, Object>> kafkaListenerContainerFactory() {
         ConcurrentKafkaListenerContainerFactory<String, Object> factory = new ConcurrentKafkaListenerContainerFactory<>();
         factory.setConsumerFactory(consumerFactory());
