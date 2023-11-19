@@ -12,7 +12,7 @@ public class WebSocketConfiguration implements WebSocketMessageBrokerConfigurer 
     @Override
     public void registerStompEndpoints(StompEndpointRegistry registry) {
         registry.addEndpoint("/container-status")
-                .setAllowedOrigins("http://localhost:3000")
+                .setAllowedOrigins("https://coffee-tree-front.web.app/")
                 .withSockJS();
     }
 
