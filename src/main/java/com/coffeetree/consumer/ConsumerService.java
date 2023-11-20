@@ -34,7 +34,5 @@ public class ConsumerService {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
-        simpMessagingTemplate.convertAndSend("/topic/container", "FAIL");
     }
 }
