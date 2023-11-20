@@ -7,4 +7,5 @@ public class Container {
     private String id;
     private double x;
     private double y;
+    private String status;
 }
