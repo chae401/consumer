@@ -28,6 +28,8 @@ public class ConsumerService {
             ObjectMapper objectMapper = new ObjectMapper();
             Container container = objectMapper.readValue(jsonString, Container.class);
             log.info("id : {}", container.getId());
+            log.info("x : {}", container.getX());
+            log.info("y : {}", container.getY());
             simpMessagingTemplate.convertAndSend("/topic/container", container);
         } catch (Exception e) {
             e.printStackTrace();
