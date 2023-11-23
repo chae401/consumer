@@ -29,7 +29,7 @@ public class KafkaProperties {
 ```
 - `CONSUMER_GROUP` : Kafka Consumer의 그룹 아이디를 나타내는 상수
 - `TOPIC` : Kafka Broker에서 구독하는 토픽
-- `bootstrapServers` : Kafka Broker의 부트스트랩 서버 주
+- `bootstrapServers` : Kafka Broker의 부트스트랩 서버 주소
 
 ### ConsumerConfiguration
 ```
